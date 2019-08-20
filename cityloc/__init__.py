@@ -6,4 +6,4 @@
 
 __author__ = "Sveinbjorn Thordarson"
 
-from .lookup import city_lookup
+from .lookup import city_lookup, capital_for_cc

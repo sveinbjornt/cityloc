@@ -34,3 +34,16 @@ def city_lookup(city_name, country=None):
     q += " ORDER BY capital DESC, population DESC, country ASC, name ASC"
 
     return _run_query(q, l)
+
+
+def capital_for_cc(country_code):
+    """ Return info on capital city, given an 3166-1 alpha-2 country code """
+    cc = country_code.upper()
+
+    q = "SELECT * FROM cities WHERE capital=1 AND country=?"
+
+    res = _run_query(q, [cc])
+    if res:
+        return res[0]
+
+    return None
