@@ -32,8 +32,26 @@ $ pip install cityloc
   'region': ''}]
 ```
 
+### Look up capital city for country
+
+```python
+>>> from cityloc import capital_for_cc
+>>> r = capital_for_cc("FR")
+>>> pprint.pprint(r)
+{'capital': 1,
+ 'country': 'FR',
+ 'id': 6687,
+ 'lat_wgs84': 48.8667,
+ 'long_wgs84': 2.3333,
+ 'name': 'Paris',
+ 'name_ascii': 'Paris',
+ 'population': 9904000,
+ 'region': 'Île-de-France'}
+```
+
 ## Version History
 
+* 0.1.1: Added capital_for_cc (17/09/2019)
 * 0.1.0: Initial release (03/01/2019)
 
 ## BSD License 

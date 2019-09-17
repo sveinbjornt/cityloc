@@ -7,7 +7,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="cityloc",
-    version="0.1.0",
+    version="0.1.1",
     author="Sveinbjorn Thordarson",
     author_email="sveinbjorn@sveinbjorn.org",
     license='BSD',
